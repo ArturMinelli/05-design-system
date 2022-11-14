@@ -8,6 +8,11 @@ export default {
   args: {
     disabled: false,
     children: "Send"
+  },
+  argTypes: {
+    onClick: {
+      action: 'click',
+    }
   }
 } as Meta<ButtonProps>
 
