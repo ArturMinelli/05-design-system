@@ -7,6 +7,13 @@ export default {
   args: {
     src: "https://github.com/ArturMinelli.png",
     alt: "Artur Minelli"
+  },
+  argTypes: {
+    src: {
+      control: {
+        type: 'text',
+      }
+    }
   }
 } as Meta<AvatarProps>
 

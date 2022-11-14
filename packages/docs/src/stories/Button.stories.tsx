@@ -10,6 +10,18 @@ export default {
     children: "Send"
   },
   argTypes: {
+    variant: {
+      options: ['primary', 'secondary', 'tertiary'],
+      control: {
+        type: 'inline-radio',
+      }
+    },
+    size: {
+      options: ['sm', 'md'],
+      control: {
+        type: 'inline-radio',
+      }
+    },
     onClick: {
       action: 'click',
     }
