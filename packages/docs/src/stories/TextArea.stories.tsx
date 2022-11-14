@@ -11,7 +11,7 @@ export default {
     (Story) => {
       return (
         <Box as="label" css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}>
-          <Text>Observations</Text>
+          <Text size="sm">Observations</Text>
           {Story()}
         </Box>
       )

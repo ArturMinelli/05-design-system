@@ -4,6 +4,9 @@ import { TextInput, TextInputProps, Text, Box } from '@ignite-ui/react'
 export default {
   title: 'Form/TextInput',
   component: TextInput,
+  args: {
+    disabled: false,
+  },
   decorators: [
     (Story) => {
       return (
@@ -19,13 +22,11 @@ export default {
 export const Primary: StoryObj<TextInputProps> = {
   args: {
     placeholder: 'Type your email',
-    disabled: false,
   }
 }
 
 export const WithPrefix: StoryObj<TextInputProps> = {
   args: {
     prefix: "cal.com/",
-    disabled: false,
   }
 }
