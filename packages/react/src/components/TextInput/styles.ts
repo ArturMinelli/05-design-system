@@ -1,8 +1,8 @@
-import { styled } from "../../styles";
+import { styled } from '../../styles'
 
 export const TextInputContainer = styled('div', {
-  padding: '$3 $4',
   backgroundColor: '$gray900',
+  padding: '$3 $4',
   borderRadius: '$sm',
   boxSizing: 'border-box',
   border: '2px solid $gray900',
@@ -10,7 +10,7 @@ export const TextInputContainer = styled('div', {
   alignItems: 'baseline',
 
   '&:has(input:focus)': {
-    border: '2px solid $ignite300',
+    borderColor: '$ignite300',
   },
 
   '&:has(input:disabled)': {
@@ -22,28 +22,28 @@ export const TextInputContainer = styled('div', {
 export const Prefix = styled('span', {
   fontFamily: '$default',
   fontSize: '$sm',
-  fontWeight: '$regular',
   color: '$gray400',
+  fontWeight: 'regular',
 })
 
 export const Input = styled('input', {
-  width: '100%',
   fontFamily: '$default',
   fontSize: '$sm',
-  fontWeight: '$regular',
   color: '$white',
+  fontWeight: 'regular',
   background: 'transparent',
-  border: 'none',
+  border: 0,
+  width: '100%',
 
   '&:focus': {
-    outline: 'none',
+    outline: 0,
   },
 
   '&:disabled': {
-    cursor: 'not-allowed'
+    cursor: 'not-allowed',
   },
 
   '&:placeholder': {
-    color: '$gray400'
-  }
+    color: '$gray400',
+  },
 })

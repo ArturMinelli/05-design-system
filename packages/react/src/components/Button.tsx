@@ -1,9 +1,8 @@
-import { ComponentProps, ElementType } from "react";
-import { styled } from "../styles";
+import { ComponentProps, ElementType } from 'react'
+import { styled } from '../styles'
 
 export const Button = styled('button', {
   all: 'unset',
-  padding: '0 $4',
   borderRadius: '$sm',
   fontSize: '$sm',
   fontWeight: '$medium',
@@ -11,6 +10,7 @@ export const Button = styled('button', {
   textAlign: 'center',
   minWidth: 120,
   boxSizing: 'border-box',
+  padding: '0 $4',
 
   display: 'flex',
   alignItems: 'center',
@@ -25,30 +25,31 @@ export const Button = styled('button', {
   },
 
   '&:disabled': {
-    cursor: 'not-allowed'
+    cursor: 'not-allowed',
   },
 
   variants: {
     variant: {
       primary: {
         color: '$white',
-        backgroundColor: '$ignite500',
+        background: '$ignite500',
 
         '&:not(:disabled):hover': {
-          backgroundColor: '$ignite300',
+          background: '$ignite300',
         },
 
         '&:disabled': {
           backgroundColor: '$gray200',
         },
       },
+
       secondary: {
         color: '$ignite300',
         border: '2px solid $ignite500',
 
         '&:not(:disabled):hover': {
+          background: '$ignite500',
           color: '$white',
-          backgroundColor: '$ignite500',
         },
 
         '&:disabled': {
@@ -56,6 +57,7 @@ export const Button = styled('button', {
           borderColor: '$gray200',
         },
       },
+
       tertiary: {
         color: '$gray100',
 
@@ -66,27 +68,28 @@ export const Button = styled('button', {
         '&:disabled': {
           color: '$gray600',
         },
-      }
+      },
     },
 
     size: {
       sm: {
         height: 38,
       },
+
       md: {
         height: 46,
       },
-    }
+    },
   },
 
   defaultVariants: {
     variant: 'primary',
-    size: 'md'
-  }
+    size: 'md',
+  },
 })
 
 export interface ButtonProps extends ComponentProps<typeof Button> {
-  as?: ElementType;
+  as?: ElementType
 }
 
 Button.displayName = 'Button'

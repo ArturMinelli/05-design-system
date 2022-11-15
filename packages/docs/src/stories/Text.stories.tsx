@@ -6,7 +6,8 @@ export default {
   component: Text,
   args: {
     size: 'md',
-    children: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, minus nesciunt. Consectetur sit earum temporibus illum animi ipsa odio voluptate cupiditate consequuntur. Perspiciatis sapiente suscipit veniam asperiores facere, ut ipsam."
+    children:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro reprehenderit est veniam? Rem recusandae sint perspiciatis debitis corrupti. Deserunt neque exercitationem illo voluptatum laudantium culpa suscipit accusantium blanditiis voluptas numquam.',
   },
   argTypes: {
     size: {
@@ -23,20 +24,20 @@ export default {
         '6xl',
         '7xl',
         '8xl',
-        '9xl'
+        '9xl',
       ],
       control: {
         type: 'inline-radio',
-      }
+      },
     },
-  }
+  },
 } as Meta<TextProps>
 
 export const Primary: StoryObj<TextProps> = {}
 
 export const CustomTag: StoryObj<TextProps> = {
   args: {
-    children: "Strong text",
-    as: 'strong'
-  }
+    children: 'Strong text',
+    as: 'strong',
+  },
 }
