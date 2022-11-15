@@ -22,6 +22,7 @@ jobs:
       - run: npm run build
         env:
           TURBO_TOKEN: sBYoKBMP2I991dTUAPXYAsSv
+          TURBO_TEAM: trilhas-br
 
       - name: Deploy storybook
         working-directory: ./packages/docs
