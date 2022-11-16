@@ -36,6 +36,10 @@ export const ToastClose = styled(RadixToast.Close, {
 
   svg: {
     color: '$gray500'
+  },
+
+  '&:hover': {
+    cursor: 'pointer',
   }
 })
 export const ToastViewport = styled(RadixToast.Viewport, {

@@ -1,11 +1,10 @@
 import { X } from 'phosphor-react';
-import { useState, useEffect, useRef, ComponentProps } from 'react'
+import { useEffect, useRef, ComponentProps } from 'react'
 import { ToastProvider, ToastRoot, ToastTitle, ToastDescription, ToastViewport, ToastClose } from './styles';
 
 export interface ToastProps extends ComponentProps<typeof ToastRoot> {
   title: string;
   description: string;
-  open: boolean;
 }
 
 export function Toast({ title, description, ...props }: ToastProps) {
