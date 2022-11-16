@@ -11,6 +11,13 @@ export const TooltipContent = styled(RadixTooltip.Content, {
   backgroundColor: '$gray900'
 }
 )
+
 export const TooltipArrow = styled(RadixTooltip.Arrow, {
   fill: '$gray900'
+})
+
+export const TooltipTrigger = styled(RadixTooltip.Trigger, {
+  background: 'transparent',
+  border: 0,
+  outline: 0,
 })

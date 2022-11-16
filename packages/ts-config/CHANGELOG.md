@@ -1,4 +1,4 @@
-# @arturmp-ignite-ui/tokens
+# @arturmp-ignite-ui/ts-config
 
 ## 3.0.0
 
@@ -11,9 +11,3 @@
 ### Major Changes
 
 - Creating Tooltip and Toast components
-
-## 1.1.0
-
-### Minor Changes
-
-- Test

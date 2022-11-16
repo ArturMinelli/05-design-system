@@ -31,7 +31,6 @@
     "@arturmp-ignite-ui/react": "*",
     "@arturmp-ignite-ui/tokens": "*",
     "@arturmp-ignite-ui/ts-config": "*",
-    "@radix-ui/react-tooltip": "^1.0.2",
     "@storybook/addon-a11y": "^6.5.12",
     "phosphor-react": "^1.4.1",
     "polished": "^4.2.2",
