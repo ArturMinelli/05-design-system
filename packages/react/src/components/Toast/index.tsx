@@ -1,15 +1,14 @@
 import { X } from 'phosphor-react';
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, ComponentProps } from 'react'
 import { ToastProvider, ToastRoot, ToastTitle, ToastDescription, ToastViewport, ToastClose } from './styles';
 
-export interface ToastProps {
+export interface ToastProps extends ComponentProps<typeof ToastRoot> {
   title: string;
   description: string;
+  open: boolean;
 }
 
-export function Toast({ title, description }: ToastProps) {
-  const [open, setOpen] = useState(false);
-  const eventDateRef = useRef(new Date());
+export function Toast({ title, description, ...props }: ToastProps) {
   const timerRef = useRef(0);
 
  useEffect(() => {
@@ -18,13 +17,7 @@ export function Toast({ title, description }: ToastProps) {
 
   return (
     <ToastProvider swipeDirection="right">
-      <button
-        onClick={() => setOpen(true)}
-      >
-        Agendar
-      </button>
-
-      <ToastRoot open={open} onOpenChange={setOpen}>
+      <ToastRoot {...props}>
         <ToastTitle>{title}</ToastTitle>
         <ToastDescription>
           {description}

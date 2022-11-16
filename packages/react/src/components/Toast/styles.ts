@@ -1,9 +1,7 @@
 import * as RadixToast from '@radix-ui/react-toast'
 import { styled } from '../../styles'
 
-export const ToastProvider = styled(RadixToast.Provider, {
-
-})
+export const ToastProvider = styled(RadixToast.Provider, {})
 
 export const ToastRoot = styled(RadixToast.Root, {
   position: 'relative',

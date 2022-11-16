@@ -1,5 +1,11 @@
 # @ignite-ui/react
 
+## 5.0.0
+
+### Major Changes
+
+- Fixing toast component
+
 ## 4.0.0
 
 ### Major Changes
