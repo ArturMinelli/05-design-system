@@ -2,7 +2,7 @@ import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 import { Tooltip, TooltipProps, Box } from '@arturmp-ignite-ui/react'
 import * as RadixTooltip from '@radix-ui/react-tooltip'
-import { colors, space, fonts, lineHeights, radii } from '@arturmp-ignite-ui/tokens'
+import { colors, fonts, radii, lineHeights } from '@arturmp-ignite-ui/tokens'
 
 export default {
   title: 'Data display/Tooltip',
